@@ -1,10 +1,11 @@
 import React from 'react'
 import style from './ButtonA.module.css'
+import Collapse from 'react-bootstrap/Collapse'
 
-const ButtonA = ({ text }) => {
+const ButtonA = ({ text, click }) => {
     return (
         <div>
-            <button className={style.ButtonA}>{text}</button>
+            <button onClick={click} className={style.ButtonA}>{text}</button>
         </div>
     )
 }
