@@ -1,6 +1,26 @@
 .Introduction {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(49, 49, 49);
     text-align: justify;
     color: aliceblue;
     padding: 10px;
+}
+
+.IntroductionSub {
+    margin-left: 15%;
+    margin-right: 15%;
+    /* max-width: 1500px; */
+    text-align: justify;
+}
+
+.IntroductionExpand {
+    display: flex;
+
+}
+
+.Introduction img {
+    margin-left: 50px;
+
+    height: 300px;
 }

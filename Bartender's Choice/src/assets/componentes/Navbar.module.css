@@ -1,10 +1,16 @@
 .Navbar {
     display: flex;
-    justify-content: space-between;
+    place-content: center;
     background-color: rgb(53, 34, 17);
     color: aliceblue;
     padding: 5px;
+}
 
+.Navbarsub {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
 }
 
 .Navbar img {
