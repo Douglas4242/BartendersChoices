@@ -1,0 +1,16 @@
+.Card {
+    border: solid white;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: flex;
+    place-content: center;
+    color: white;
+    margin: 20px;
+}
+
+.Card h1 {
+    padding: 20px;
+}

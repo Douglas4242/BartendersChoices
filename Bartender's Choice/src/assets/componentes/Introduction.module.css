@@ -24,3 +24,14 @@
     padding: 10px;
     height: 350px;
 }
+
+.IntroductionExpand {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-out;
+}
+
+.IntroductionExpand.show {
+    max-height: 1000px;
+    transition: max-height 1s ease-in;
+}
