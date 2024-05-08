@@ -1,0 +1,13 @@
+.Specialties {
+    margin-left: 10%;
+    display: flex;
+}
+
+.SpecialtiesDescription {
+    max-width: 40%;
+    width: 40%;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: justify;
+    padding: 40px;
+}

@@ -7,6 +7,21 @@
     padding: 10px;
 }
 
+.Introduction h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.Introduction h2 {
+    font-size: 40px;
+    margin-top: 0px;
+
+}
+
+.Introduction p {
+    font-size: 20px;
+}
+
 .IntroductionSub {
     margin-left: 15%;
     margin-right: 15%;

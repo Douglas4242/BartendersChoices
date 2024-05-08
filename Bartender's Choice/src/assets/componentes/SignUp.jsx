@@ -8,6 +8,6 @@ const SignUp = () => {
         </div>
     )
 }
-import style from './SignUp.module.css'
+
 
 export default SignUp
