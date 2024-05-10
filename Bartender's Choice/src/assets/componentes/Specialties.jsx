@@ -28,7 +28,7 @@ const Specialties = () => {
     }
 
     return (
-        < div className={style.Specialties} >
+        < div id='Specialties' className={style.Specialties} >
             <div>
                 {/* Coquetelaria Clássica */}
                 <Card text="Coquetelaria Clássica" bg="https://universoretro.com.br/wp-content/uploads/2015/07/coquetel.jpg" type={Coquetelaria} />

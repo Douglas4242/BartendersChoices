@@ -3,7 +3,7 @@ import style from './Gallery.module.css'
 
 const Gallery = () => {
     return (
-        <div>
+        <div id='Gallery' className={style.Gallery}>
 
         </div>
     )
