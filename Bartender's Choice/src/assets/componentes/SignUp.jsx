@@ -20,7 +20,7 @@ const SignUp = () => {
                 </form>
                 <form>
                     <label>Conte-nos suas experiências!</label>
-                    <input type="textbox" id="xp" className={style.SignUpTextbox} />
+                    <textarea class="longInput" cols="20" rows="10"></textarea>
                 </form>
             </div>
         </div>

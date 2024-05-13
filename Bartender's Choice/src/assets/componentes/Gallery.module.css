@@ -1,1 +1,5 @@
 .Gallery {}
+
+.Gallery img {
+    height: 400px;
+}

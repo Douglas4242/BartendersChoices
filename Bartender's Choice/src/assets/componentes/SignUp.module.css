@@ -14,7 +14,8 @@
     font-size: 30px !important;
 }
 
-.SignUp input {
+.SignUp input,
+.SignUp textarea {
     width: 100%;
     border-radius: 20px;
     border: none;
@@ -25,7 +26,8 @@
     margin-bottom: 20px;
 }
 
-.SignUp input:focus {
+.SignUp input:focus,
+.SignUp textarea:focus {
     background-color: rgb(133, 84, 41);
 }
 
