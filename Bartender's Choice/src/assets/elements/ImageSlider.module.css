@@ -1,0 +1,51 @@
+.ImageSliderSub {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.ImageSlider {
+    margin-top: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: -45px;
+    font-size: 50px;
+    color: aliceblue;
+    z-index: 1;
+    cursor: pointer;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -45px;
+    font-size: 50px;
+    color: aliceblue;
+    z-index: 1;
+    cursor: pointer;
+    text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+        1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+}
+
+.dotsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.dots {
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 60px;
+    color: aliceblue;
+}
