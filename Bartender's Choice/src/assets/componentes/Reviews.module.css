@@ -1,0 +1,17 @@
+.Reviews {
+    margin-top: 100px;
+
+}
+
+.Reviews h1 {
+    color: aliceblue;
+    margin-left: 15%;
+
+}
+
+.ReviewsSub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}

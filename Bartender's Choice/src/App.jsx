@@ -5,7 +5,8 @@ import Introduction from './assets/componentes/Introduction'
 import Specialties from './assets/componentes/Specialties'
 import SignUp from './assets/componentes/SignUp'
 import Gallery from './assets/componentes/Gallery'
-
+import Reviews from './assets/componentes/Reviews'
+import Footer from './assets/componentes/Footer'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
       <Specialties />
       <SignUp />
       <Gallery />
+      <Reviews />
+      <Footer />
     </>
   )
 }
