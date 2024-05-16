@@ -1,0 +1,41 @@
+.SpeCard {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(133, 84, 41);
+    width: 70%;
+    height: 150px;
+    padding: 25px;
+    border-radius: 40px;
+    margin-top: 30px;
+    border: solid black;
+    color: aliceblue;
+}
+
+.SpeCard img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 25% 25%;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+
+
+.SpeCardInfo {
+
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SpeCard h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.SpeCard p {
+    margin: 0;
+}

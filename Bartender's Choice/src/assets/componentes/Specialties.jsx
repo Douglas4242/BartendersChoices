@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import style from './Specialties.module.css'
 import Card from '../elements/Card'
 import ButtonA from '../elements/ButtonA'
+import SpeCard from '../elements/SpeCard'
 
 const Specialties = () => {
 
