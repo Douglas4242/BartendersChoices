@@ -17,7 +17,6 @@ function App() {
       <Navbar />
       <Introduction />
       <Specialties />
-      <SpeCard />
       <SignUp />
       <Gallery />
       <Reviews />
