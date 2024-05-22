@@ -39,3 +39,24 @@
 .SpeCard p {
     margin: 0;
 }
+
+@media screen and (max-width: 1440px) {
+
+    .SpeCardInfo {
+        width: 70%;
+        right: 0;
+    }
+
+    .SpeCard {
+        width: 90%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .SpeCard {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+}

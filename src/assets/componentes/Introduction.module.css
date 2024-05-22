@@ -50,3 +50,15 @@
     max-height: 1000px;
     transition: max-height 1s ease-in;
 }
+
+
+@media screen and (max-width: 1440px) {
+    .IntroductionExpand {
+        flex-direction: column;
+    }
+
+    .Introduction img {
+        height: 300px;
+        width: 500px
+    }
+}

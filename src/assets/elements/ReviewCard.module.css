@@ -28,7 +28,17 @@
 }
 
 .ReviewCard p {
-    max-width: 80%px;
+    max-width: 80%;
     font-size: 20px;
     margin-top: 0px;
+}
+
+@media screen and (max-width: 1440px) {
+    .ReviewCard {
+        width: 90%;
+    }
+
+    .ReviewCard p {
+        max-width: 100%;
+    }
 }
