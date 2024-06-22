@@ -1,10 +1,17 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: rgb(49, 49, 49);
-}
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
-body {
-  margin: 0px;
+
+
+:root {
+  --font-titles: "Rye", sans-serif;
+  --font-text: "Teko", sans-serif;
+
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+  --color-bg: #2b221c;
+  --color-footer: rgba(3, 0, 55, 1);
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
 }
