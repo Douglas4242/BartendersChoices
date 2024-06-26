@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Navbar } from './assets/componentes/index'
-import { Hero } from './assets/containers'
+import { Hero, Specialists } from './assets/containers'
 
 function App() {
 
@@ -10,6 +10,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Specialists />
     </>
   )
 }
