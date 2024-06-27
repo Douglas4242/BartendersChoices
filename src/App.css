@@ -11,7 +11,6 @@
 
 body {
   background: var(--color-bg);
-  height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -27,6 +26,20 @@ a {
 .section__margin {
   margin: 4rem 6rem;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-highlight);
+}
+
 
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -99,5 +112,34 @@ a {
 
   100% {
     opacity: 1;
+  }
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }

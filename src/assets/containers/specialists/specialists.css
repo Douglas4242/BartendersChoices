@@ -4,6 +4,13 @@
     align-items: flex-start;
 }
 
+.bc__specialists button {
+    background: none;
+    border: none;
+    color: var(--color-text-highlight);
+    cursor: pointer;
+}
+
 .bc__specialists-heading {
     padding-bottom: 0.5rem;
     border-bottom: 4px solid var(--color-text-highlight);
@@ -38,4 +45,130 @@
     text-align: center;
     font-family: var(--font-text);
     font-size: 35px;
+}
+
+.bc__specialists_menu-container {
+    display: none;
+    justify-content: center;
+}
+
+.bc__specialists_menu-container-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bc__specilists_menu-container-links_opt {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+    color: var(--color-text);
+    max-width: 500px;
+}
+
+.bc__specilists_menu-container-links_opt p {
+    cursor: pointer;
+    text-wrap: wrap;
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 35px;
+    min-width: 50px;
+    max-width: 150px;
+}
+
+.bc__specilists-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .bc__specialists-links {
+        display: none;
+    }
+
+    .bc__specialists_menu-container {
+        display: flex;
+    }
+
+    .bc__specialists button {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    .bc__specilists_menu-container-links_opt p {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    .bc__specialists {
+        padding: 4rem 1rem;
+    }
+
+    .bc__specilists_menu-container-links_opt p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .bc__specialists_menu-container-links {
+        gap: 1px;
+    }
+
+    .bc__specilists_menu-container-links_opt {
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .bc__specilists_menu-container-links_opt p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .bc__specialists-heading h1 {
+        font-size: 30px;
+    }
+
+    .bc__specialists_menu-container-links {
+        gap: 1px;
+    }
+
+    .bc__specilists_menu-container-links_opt {
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .bc__specilists_menu-container-links_opt p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .next,
+    .previous {
+        display: none;
+    }
+
+    .bc__specialists_menu-container-links {
+        min-width: 300px;
+        gap: 10px;
+    }
+
+    .bc__specilists_menu-container-links_opt p {
+
+        min-width: 150px;
+        max-width: 200px;
+    }
 }

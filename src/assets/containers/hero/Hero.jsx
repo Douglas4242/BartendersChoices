@@ -22,7 +22,7 @@ const Hero = () => {
                 <button onClick={() => setShowModal(true)}>Conheça nossa história!</button>
                 {showModal && (
                     <div className='bc__hero-modal_overlay' onClick={() => setShowModal(false)}>
-                        <div className='bc__hero-modal_text fade-in' onClick={(e) => e.stopPropagation()}>
+                        <div className='bc__hero-modal_text slide-left' onClick={(e) => e.stopPropagation()}>
                             <p><Text /></p>
                         </div>
                     </div>

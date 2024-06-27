@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import Logo from '../../images/tabicon.png'
+import Logo from '../../images/Logo.svg'
 import { FaInstagram, FaFacebook } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleSharp } from "react-icons/io5";

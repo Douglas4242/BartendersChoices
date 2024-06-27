@@ -90,4 +90,12 @@
         flex: 1;
     }
 
+    .bc__navbar-logo {
+        justify-content: flex-end;
+    }
+
+    .bc__navbar-logo img {
+        width: 100px;
+    }
+
 }
