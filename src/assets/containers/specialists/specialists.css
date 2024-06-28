@@ -79,6 +79,24 @@
     max-width: 150px;
 }
 
+.bc__specialists-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bc__specialists-card-container button {
+    padding: 0.2rem 1rem;
+    background-color: #fff;
+    border: 3px solid #000;
+    font-family: var(--font-text);
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
 .bc__specilists-cards {
     display: flex;
     flex-wrap: wrap;

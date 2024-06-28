@@ -1,57 +1,66 @@
-import React, { useCallback, useState } from 'react'
-import './specialists.css'
+import React, { useCallback, useState } from 'react';
+import './specialists.css';
 import { IoMdArrowDropleftCircle, IoMdArrowDroprightCircle } from "react-icons/io";
 import { SpecialistCard } from '../../componentes';
+import specialists_data from '../../files/specialists';
 
 const Specialists = () => {
+    const size = 40;
+    const [selectOpt, setSelectOpt] = useState(1); // useState para selecionar a opção
 
-    const size = 40
+    const [showSpecialists, setShowSpecialists] = useState(false)
 
-    const [selectOpt, setSelectOpt] = useState(1)
+    const category = () => {
+        if (selectOpt === 1) {
+            return "CoquetelariaClassica";
+        } else if (selectOpt === 2) {
+            return "MixologiaMolecular";
+        } else if (selectOpt === 3) {
+            return "BarDeWhisky"
+        } else if (selectOpt === 4) {
+            return "CoquetéisSemAlcool"
+        } else {
+            return "PersonalizaçaoDeCoqueteis"
+        }
+    };
 
     const Menu = () => (
         <>
-            {/* Opt1 */}
             <Opt1 />
-            {/* Opt2 */}
             <Opt2 />
-            {/* Opt3 */}
             <Opt3 />
-            {/* Opt4 */}
             <Opt4 />
-            {/* Opt5 */}
             <Opt5 />
         </>
-    )
+    );
 
     const Opt1 = () => (
         <p onClick={() => setSelectOpt(1)} className={selectOpt === 1 && ("text__highlight")}>Coquetelaria Clássica</p>
-    )
+    );
 
     const Opt2 = () => (
         <p onClick={() => setSelectOpt(2)} className={selectOpt === 2 && ("text__highlight")}>Mixologia Molecular</p>
-    )
+    );
 
     const Opt3 = () => (
         <p onClick={() => setSelectOpt(3)} className={selectOpt === 3 && ("text__highlight")}>Bar de Whisky</p>
-    )
+    );
 
     const Opt4 = () => (
         <p onClick={() => setSelectOpt(4)} className={selectOpt === 4 && ("text__highlight")}>Coquetéis Sem Álcool</p>
-    )
+    );
 
     const Opt5 = () => (
         <p onClick={() => setSelectOpt(5)} className={selectOpt === 5 && ("text__highlight")}>Personalização de Coquetéis</p>
-    )
+    );
 
     const MoveNext = useCallback(() => {
-        setSelectOpt((prev) => (prev < 5 ? prev + 1 : 1))
-    })
+        setSelectOpt((prev) => (prev < 5 ? prev + 1 : 1));
+    }, []);
 
     const MovePrevious = useCallback(() => {
-        setSelectOpt((prev) => (prev > 1 ? prev - 1 : 5))
-    })
-
+        setSelectOpt((prev) => (prev > 1 ? prev - 1 : 5));
+    }, []);
 
     return (
         <div className='bc__specialists section__padding'>
@@ -130,20 +139,37 @@ const Specialists = () => {
                         </button>
                     </div>
                 </div>
-                <div className="bc__specilists-cards">
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
-                    <SpecialistCard />
+                <div className="bc__specialists-card-container">
+                    <button onClick={() => setShowSpecialists(!showSpecialists)}>{showSpecialists ? ("Esconder Especialistas") : ("Mostar Especialistas")}</button>
+                    {showSpecialists && (
+                        <div className="bc__specilists-cards fade-in">
+                            {specialists_data.map((item, i) => {
+                                if (item.category === category()) {
+                                    return (
+                                        <SpecialistCard
+                                            key={i}
+                                            photo={item.photo}
+                                            name={item.name}
+                                            age={item.age}
+                                            phone={item.phone}
+                                            email={item.email}
+                                            xp={item.xp}
+                                            score={item.score}
+                                        />
+                                    );
+                                } else {
+                                    return null;
+                                }
+                            })}
+                        </div>
+                    )}
+                    {showSpecialists && (
+                        <button onClick={() => setShowSpecialists(!showSpecialists)}>{showSpecialists ? ("Esconder Especialistas") : ("Mostar Especialistas")}</button>
+                    )}
                 </div>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
-export default Specialists
+export default Specialists;

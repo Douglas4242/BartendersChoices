@@ -3,11 +3,11 @@ import './specialistcard.css'
 import { FaEnvelope, FaPhoneAlt, FaCocktail } from "react-icons/fa";
 
 
-const SpecialistCard = ({ photo, name, age, text, score, phone, email }) => {
+const SpecialistCard = ({ photo, name, age, xp, score, phone, email }) => {
 
     const ShowScore = () => {
         let scores = [];
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < score; i++) {
             scores.push(<p key={i}><FaCocktail size={size} /></p>);
         }
         return scores;
@@ -18,15 +18,15 @@ const SpecialistCard = ({ photo, name, age, text, score, phone, email }) => {
     return (
         <div className='bc__specialistcard'>
             <div className='bc__specialistcard-heading'>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROZ2ZV8f_IBk865E7bEObKgFmfnBsorNTXcA&s" />
+                <img src={photo} />
                 <div className='bc__specialistcard-heading_info'>
-                    <h3>Nome nome nome</h3>
-                    <p>30 Anos</p>
+                    <h3>{name}</h3>
+                    <p>{age} Anos</p>
                 </div>
             </div>
             <div className='bc__specialistcard-text'>
                 <h3>Experiências</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, at in tempore reiciendis pariatur natus maxime, deleniti commodi porro asperiores praesentium voluptatem omnis facilis eligendi eius quaerat possimus ad a!</p>
+                <p>{xp}</p>
             </div>
             <div className='bc__specialistcard-icons'>
                 <div className='bc__specialistcard-icons_score'>
@@ -34,8 +34,9 @@ const SpecialistCard = ({ photo, name, age, text, score, phone, email }) => {
                 </div>
 
                 <div className='bc__specialistcard-icons_contact'>
-                    <p><FaEnvelope size={size} /> (11)99999-9999</p>
-                    <p><FaPhoneAlt size={size} /> email@email.com</p>
+                    <p><FaPhoneAlt size={size} /> {phone}</p>
+                    <p><FaEnvelope size={size} /> {email}</p>
+
                 </div>
             </div>
         </div>

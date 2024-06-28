@@ -122,3 +122,13 @@
 .bc__specialistcard-icons_contact p {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 400px) {
+    .bc__specialistcard {
+        width: 310px;
+        height: 600px;
+
+    }
+
+
+}
