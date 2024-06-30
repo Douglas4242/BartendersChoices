@@ -16,10 +16,10 @@ const Navbar = () => {
     const Menu = () => (
         <>
             <a href='#'><p>Home</p></a>
-            <a href='#'><p>Especialidadades</p></a>
-            <a href='#'><p>Fotos</p></a>
-            <a href='#'><p>Depoimentos</p></a>
-            <a href='#'><p>Contatos</p></a>
+            <a href='#specialists'><p>Especialidadades</p></a>
+            <a href='#gallery'><p>Fotos</p></a>
+            <a href='#reviews'><p>Depoimentos</p></a>
+            <a href='#contact'><p>Contatos</p></a>
         </>
     )
 
@@ -33,10 +33,10 @@ const Navbar = () => {
             </div>
             <div className="bc__navbar-icons">
                 <div className='bc__navbar-icons_instagram'>
-                    <FaInstagram size={size + 5} />
+                    <a href='https://www.instagram.com' target='_blank'><FaInstagram size={size + 5} /></a>
                 </div>
                 <div className='bc__navbar-icons_facebook'>
-                    <FaFacebook size={size} />
+                    <a href='https://www.facebook.com' target='_blank'><FaFacebook size={size} /></a>
                 </div>
             </div>
             <div className='bc__navbar-menu'>
@@ -49,8 +49,8 @@ const Navbar = () => {
                         <div className="bc__navbar-links-menu">
                             <Menu />
                             <div className='bc__navbar-icons-menu'>
-                                <FaInstagram size={size + 5} />
-                                <FaFacebook size={size} />
+                                <a href='https://www.instagram.com' target='_blank'><FaInstagram size={size + 5} /></a>
+                                <a href='https://www.facebook.com' target='_blank'><FaFacebook size={size} /></a>
                             </div>
                         </div>
                     </div>

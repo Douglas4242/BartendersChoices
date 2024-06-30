@@ -12,6 +12,7 @@ import gallery08 from '../../images/gallery08.jpg'
 import gallery09 from '../../images/gallery09.jpg'
 import gallery10 from '../../images/gallery10.jpg'
 import { ReviewCard } from '../../componentes';
+import reviews from '../../files/reviews'
 
 
 const Gallery = () => {
@@ -42,7 +43,7 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div className='bc__gallery section__padding'>
+        <div id='gallery' className='bc__gallery section__padding'>
             <div className='bc__gallery-heading'>
                 <h1>Especialistas em Ação!</h1>
             </div>
@@ -58,16 +59,18 @@ const Gallery = () => {
                     ))}
                     <button><p onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)}><IoMdArrowDroprightCircle size={size} /></p></button>
                 </div>
-                <div className="bc__gallery-reviews">
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
-                    <ReviewCard />
+                <div id='reviews' className="bc__gallery-reviews">
+                    {reviews.map((item, i) => {
+                        return (
+                            <ReviewCard
+                                key={i}
+                                photo={item.photo}
+                                name={item.name}
+                                review={item.review}
+                            />
+                        )
+                    })}
+
                 </div>
             </div>
         </div>

@@ -63,7 +63,7 @@ const Specialists = () => {
     }, []);
 
     return (
-        <div className='bc__specialists section__padding'>
+        <div id='specialists' className='bc__specialists section__padding'>
             <div className="bc__specialists-heading">
                 <h1>Especialistas</h1>
             </div>

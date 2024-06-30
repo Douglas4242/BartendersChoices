@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { Navbar } from './assets/componentes/index'
-import { Gallery, Hero, Specialists } from './assets/containers'
+import { Footer, Gallery, Hero, Specialists } from './assets/containers'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
       <Hero />
       <Specialists />
       <Gallery />
+      <Footer />
     </>
   )
 }
